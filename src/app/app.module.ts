@@ -11,6 +11,8 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HomePage } from './pages/home/home.page';
 import { TypographyComponent } from './components/typography/typography.component';
+import { TopFooterComponent } from './components/layout/footer/top-footer/top-footer.component';
+import { BottomFooterComponent } from './components/layout/footer/bottom-footer/bottom-footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { TypographyComponent } from './components/typography/typography.componen
     LayoutComponent,
     HomePage,
     TypographyComponent,
+    TopFooterComponent,
+    BottomFooterComponent,
   ],
   imports: [
     BrowserModule,
