@@ -9,26 +9,29 @@ interface NavItem {
   selector: 'app-header',
   template: `
     <header class="flex items-center border-b-4 border-b-primary h-[80px] divide-x-2">
-      <a href="/" class="px-[30px] h-full flex justify-center items-center w-[180px]">
-        <img src="../../../../assets/NTTLogo.svg" alt="">
+      <a href="/" class="px-[30px] h-[80px] flex justify-center items-center w-[180px]">
+        <img src="../../../../assets/NTTLogo.svg" alt="" class="w-[180px] h-[80px]">
       </a>
-      <nav class="flex justify-between px-[30px] w-full h-full items-center">
-        <div class="flex gap-10">
+      <nav class="flex justify-between sm:px-[30px] sm:w-full w-1/2 h-full items-center">
+        <div class="sm:flex gap-10 hidden">
           <div *ngFor="let navItem of leftNavItems" class="flex h-[76px]">
             <button class="hover:text-primary hover:border-b-4 hover:border-b-primary">{{ navItem.label }}</button>
           </div>
         </div>
-        <div class="flex gap-10">
+        <div class="lg:flex gap-10 hidden">
           <div *ngFor="let navItem of rightNavItems" class="flex h-[76px]">
             <button class="hover:text-primary hover:border-b-4 hover:border-b-primary">{{ navItem.label }}</button>
           </div>
         </div>
       </nav>
-      <div class="flex items-center justify-center p-6 ">
+      <div class="hidden sm:flex items-center justify-center p-6 ">
         <mat-icon class="text-primary font">language</mat-icon>
       </div>
       <div class="flex items-center justify-center p-6 ">
         <mat-icon class="text-primary">search</mat-icon>
+      </div>
+      <div class="flex items-center justify-center p-6 lg:hidden">
+        <mat-icon class="text-primary">menu</mat-icon>
       </div>
     </header>
   `,
