@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
       class="relative w-[285px] h-[285px] rounded-full bg-white border-[24px] border-primary transition duration-500 ease-in-out hover:border-accent group"
     >
       <div
-        class="flex flex-col items-center justify-center w-full h-full text-primary group-hover:text-accent"
+        class="absolute lg:flex flex-col items-center justify-center w-full h-full text-primary group-hover:text-accent"
       >
-        <p class="text-[40px]">{{ title }}</p>
+        <p class="text-16px sm:text-[24px] md:text-[32px] lg:text-[40px]">{{ title }}</p>
         <p class="text-center px-2">{{ description }}</p>
       </div>
       <div
