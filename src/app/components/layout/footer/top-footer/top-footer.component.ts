@@ -8,20 +8,27 @@ type TopFooterData = {
 @Component({
   selector: 'app-top-footer',
   template: `
-    <div class="flex w-full justify-between p-[80px] border-t-2 border-t-primary">
-    <div class="flex w-full">
-      <div class="w-full" *ngFor="let section of TOP_FOOTER_DATA">
+    <div class="flex w-full justify-between py-[40px] px-[22px] sm:p-[80px] border-t-2 border-t-black">
+    <div class="flex flex-col sm:flex-row w-full">
+      <div class="w-full mt-8 sm:mt-0" *ngFor="let section of TOP_FOOTER_DATA">
         <p class="text-[12px] text-primary">{{ section.title }}</p>
-        <div class="flex flex-col mt-6 text-[20px] font-light gap-y-[7px]">
+        <div class="flex flex-col mt-6 text-[16px] sm:text-[20px] font-light gap-y-[7px]">
           <a *ngFor="let item of section.items" class="cursor-pointer hover:text-primary">{{ item }}</a>
         </div>
+      </div>
+      <div class="flex sm:hidden w-full justify-start gap-x-4 mt-4">
+            <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
+            <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
+            <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
+            <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
+            <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
       </div>
     </div>
     <div class="flex flex-col justify-between w-1/4">
         <div class="flex w-full justify-end">
             <img src="../../../../assets/NTTLogo.svg" alt="">
         </div>
-        <div class="flex w-full justify-center gap-x-4">
+        <div class="hidden sm:flex w-full justify-center gap-x-4">
             <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
             <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
             <mat-icon class="text-gray-500 text-base" fontIcon="home"></mat-icon>
@@ -31,7 +38,6 @@ type TopFooterData = {
     </div>
   </div>
   `,
-  styleUrls: ['./top-footer.component.css']
 })
 
 export class TopFooterComponent {
