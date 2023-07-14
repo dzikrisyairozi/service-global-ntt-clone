@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { HomePage } from './pages/home/home.page';
+import { TypographyComponent } from './components/typography/typography.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomePage } from './pages/home/home.page';
     FooterComponent,
     LayoutComponent,
     HomePage,
+    TypographyComponent,
   ],
   imports: [
     BrowserModule,
