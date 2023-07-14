@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SandboxComponent } from './sandbox/sandbox.component';
+import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialDesignModule } from './material-design/material.design.module';
+import { MaterialDesignModule } from './lib/material.design.module';
 
 @NgModule({
   declarations: [
