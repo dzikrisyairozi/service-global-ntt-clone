@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sandbox',
+  selector: 'page-sandbox',
   templateUrl: './sandbox.page.html',
   styleUrls: ['./sandbox.page.css']
 })
