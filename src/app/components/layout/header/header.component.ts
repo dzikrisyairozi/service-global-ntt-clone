@@ -26,6 +26,7 @@ interface NavItem {
       </nav>
       <div class="hidden sm:flex items-center justify-center p-6 ">
         <mat-icon class="text-primary font">language</mat-icon>
+        <p class='text-center w-14'>en-US</p>
       </div>
       <div class="flex items-center justify-center p-6 ">
         <mat-icon class="text-primary">search</mat-icon>
