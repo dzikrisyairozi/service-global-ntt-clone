@@ -4,14 +4,18 @@ import { SandboxComponent } from './pages/sandbox/sandbox.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path: '/',
-    component: AppComponent,
-  },
+  // {
+  //   path: '/',
+  //   component: AppComponent,
+  // },
   {
     path: 'sandbox',
     component: SandboxComponent,
   },
+  {
+    path: "**",
+    redirectTo: '/'
+  }
 ];
 
 @NgModule({
