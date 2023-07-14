@@ -8,7 +8,7 @@ type TopFooterData = {
 @Component({
   selector: 'app-top-footer',
   template: `
-    <div class="flex w-full justify-between py-[40px] px-[22px] sm:p-[80px] border-t-2 border-t-black">
+    <div class="flex w-full justify-between py-[40px] px-[22px] sm:p-[80px] border-t-[1px] border-t-black">
     <div class="flex flex-col sm:flex-row w-full">
       <div class="w-full mt-8 sm:mt-0" *ngFor="let section of TOP_FOOTER_DATA">
         <p class="text-[12px] text-primary">{{ section.title }}</p>
