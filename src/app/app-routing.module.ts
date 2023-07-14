@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SandboxComponent } from './pages/sandbox/sandbox.component';
+import { SandboxPage } from './pages/sandbox/sandbox.page';
 import { AppComponent } from './app.component';
+import { HomePage } from './pages/home/home.page';
 
 const routes: Routes = [
-  // {
-  //   path: '/',
-  //   component: AppComponent,
-  // },
+  {
+    path: '',
+    component: HomePage,
+  },
   {
     path: 'sandbox',
-    component: SandboxComponent,
+    component: SandboxPage,
   },
   {
     path: "**",
-    redirectTo: '/'
+    redirectTo: ''
   }
 ];
 

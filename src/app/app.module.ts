@@ -3,19 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SandboxComponent } from './pages/sandbox/sandbox.component';
+import { SandboxPage } from './pages/sandbox/sandbox.page';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from './lib/material.design.module';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { HomePage } from './pages/home/home.page';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SandboxComponent,
+    SandboxPage,
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
+    HomePage,
   ],
   imports: [
     BrowserModule,
