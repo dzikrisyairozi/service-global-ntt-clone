@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,11 @@ import { HomePage } from './pages/home/home.page';
 import { SpeakExpertComponent } from './pages/home/speak-expert/speak-expert.component';
 import { ComponentsModule } from './components/components.module';
 import { WhyNttComponent } from './pages/home/why-ntt/why-ntt.component';
+import { RelatedInsightsComponent } from './pages/home/related-insights/related-insights.component';
+import {register} from 'swiper/element/bundle';
+import { SwiperDirective } from './directives/swiper.directive';
+
+register();
 
 @NgModule({
   declarations: [
@@ -18,15 +23,18 @@ import { WhyNttComponent } from './pages/home/why-ntt/why-ntt.component';
     HomePage,
     SpeakExpertComponent,
     WhyNttComponent,
+    RelatedInsightsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    ComponentsModule
+    ComponentsModule,
+    SwiperDirective,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
