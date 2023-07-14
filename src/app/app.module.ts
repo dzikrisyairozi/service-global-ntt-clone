@@ -9,6 +9,7 @@ import { MaterialDesignModule } from './lib/material.design.module';
 import { HomePage } from './pages/home/home.page';
 import { SpeakExpertComponent } from './pages/home/speak-expert/speak-expert.component';
 import { ComponentsModule } from './components/components.module';
+import { WhyNttComponent } from './pages/home/why-ntt/why-ntt.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ComponentsModule } from './components/components.module';
     SandboxPage,
     HomePage,
     SpeakExpertComponent,
+    WhyNttComponent,
   ],
   imports: [
     BrowserModule,
