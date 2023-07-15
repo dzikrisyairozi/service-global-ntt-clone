@@ -26,7 +26,7 @@ interface Insight {
           >
             <div
               *ngIf="insight.tag"
-              class="absolute bg-[#BAD2ED] px-[16px] py-[8px] text-xs rounded-full top-12 left-12 uppercase tracking-widest"
+              class="absolute bg-light_gray px-[16px] py-[8px] text-xs rounded-full top-12 left-12 uppercase tracking-widest"
             >
               {{ insight.tag }}
             </div>
