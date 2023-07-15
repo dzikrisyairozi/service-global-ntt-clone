@@ -14,6 +14,8 @@ import { ClientReviewComponent } from './client-review/client-review.component';
 import { ClientReviewDesktopComponent } from './client-review/client-review-desktop/client-review-desktop.component';
 import { ClientReviewMediumComponent } from './client-review/client-review-medium/client-review-medium.component';
 import { ClientReviewMobileComponent } from './client-review/client-review-mobile/client-review-mobile.component';
+import { ServiceOverviewDesktopComponent } from './service-overview/service-overview-desktop/service-overview-desktop.component';
+import { ServiceOverviewMobileComponent } from './service-overview/service-overview-mobile/service-overview-mobile.component';
 
 register();
 
@@ -29,6 +31,8 @@ register();
     ClientReviewDesktopComponent,
     ClientReviewMediumComponent,
     ClientReviewMobileComponent,
+    ServiceOverviewDesktopComponent,
+    ServiceOverviewMobileComponent,
   ],
   imports: [
     CommonModule,
