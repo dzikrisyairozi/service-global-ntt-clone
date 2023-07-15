@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SandboxPage } from './pages/sandbox/sandbox.page';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialDesignModule } from './lib/material.design.module';
-import { HomePage } from './pages/home/home.page';
 import { ComponentsModule } from './components/components.module';
 import {register} from 'swiper/element/bundle';
 import { SwiperDirective } from './directives/swiper.directive';
