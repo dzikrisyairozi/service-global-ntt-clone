@@ -14,8 +14,9 @@ import {
         slides-per-view="1"
         autoplay
         loop
-        effect="fade"
+        effect=fade
         class="w-full"
+        crossFade=true
       >
         <swiper-slide
           *ngFor="let client_review of ClientReviews"
