@@ -10,6 +10,10 @@ import { ComponentsModule } from 'src/app/components/components.module';
 import {register} from 'swiper/element/bundle';
 import { MaterialDesignModule } from 'src/app/lib/material.design.module';
 import { SwiperDirective } from 'src/app/directives/swiper.directive';
+import { ClientReviewComponent } from './client-review/client-review.component';
+import { ClientReviewDesktopComponent } from './client-review/client-review-desktop/client-review-desktop.component';
+import { ClientReviewMediumComponent } from './client-review/client-review-medium/client-review-medium.component';
+import { ClientReviewMobileComponent } from './client-review/client-review-mobile/client-review-mobile.component';
 
 register();
 
@@ -21,6 +25,10 @@ register();
     RelatedInsightsComponent,
     FeaturedBannerComponent,
     ServiceOverviewComponent,
+    ClientReviewComponent,
+    ClientReviewDesktopComponent,
+    ClientReviewMediumComponent,
+    ClientReviewMobileComponent,
   ],
   imports: [
     CommonModule,
@@ -36,6 +44,6 @@ register();
     FeaturedBannerComponent,
     ServiceOverviewComponent,
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], 
 })
 export class HomeModule { }
