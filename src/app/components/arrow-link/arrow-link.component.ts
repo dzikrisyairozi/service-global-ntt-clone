@@ -7,11 +7,11 @@ import { Component, Input } from '@angular/core';
       [ngClass]="{
         ' bg-white text-primary transition duration-200 ease-in-out hover:bg-gray-200':
           variant === 'accent',
-        ' bg-primary text-white transition duration-200 ease-in-out hover:bg-accent':
+        ' bg-[#0FC8F2] text-black transition duration-200 ease-in-out hover:bg-accent':
           variant === 'primary'
       }"
 
-      class="mt-[40px] rounded-md px-4 py-2 text-sm flex items-center group"
+      class="mt-[40px] rounded-md px-4 py-2 text-xs sm:text-sm md:text-base lg:text-lg flex items-center group"
     >
       <p>
         <ng-content></ng-content>
