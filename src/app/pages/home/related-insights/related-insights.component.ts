@@ -77,7 +77,6 @@ SwiperCore.use([]);
       </div>
     </section>
   `,
-  styleUrls: ['./related-insights.component.css'],
 })
 export class RelatedInsightsComponent {
   @ViewChild('swiperContainer') swiperContainer?: ElementRef;

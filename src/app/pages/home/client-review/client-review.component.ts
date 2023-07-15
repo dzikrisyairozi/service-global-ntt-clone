@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
       <app-client-review-mobile class='sm:hidden block'></app-client-review-mobile>
     </section>
   `,
-  styleUrls: ['./client-review.component.css']
 })
 export class ClientReviewComponent {
   
