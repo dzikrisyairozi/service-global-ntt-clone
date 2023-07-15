@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import Swiper from 'swiper';
+import SwiperCore, { Swiper } from 'swiper';
 import { register } from 'swiper/element';
 
 interface Insight {
@@ -7,6 +7,8 @@ interface Insight {
   title: string;
   tag?: string;
 }
+
+SwiperCore.use([]);
 
 @Component({
   selector: 'app-related-insights',
@@ -18,6 +20,10 @@ interface Insight {
           initial-slide="0"
           slides-per-view="3"
           class="hidden sm:flex gap-x-4"
+          inject-styles='[
+            ".swiper-slide { width: 300px; }",]'
+          #swiperContainer
+          navigation
         >
           <swiper-slide
             *ngFor="let insight of insights"
@@ -80,10 +86,9 @@ interface Insight {
   styleUrls: ['./related-insights.component.css'],
 })
 export class RelatedInsightsComponent {
-  @ViewChild('swiperRef')
-  swiperRef: ElementRef | undefined;
-  swiper?: Swiper;
-
+  @ViewChild('swiperContainer') swiperContainer?: ElementRef;
+  @ViewChild('swiperContainerMobile') swiperContainerMobile?: ElementRef;
+  
   insights: Insight[] = [
     {
       imageUrl:
@@ -110,12 +115,10 @@ export class RelatedInsightsComponent {
     },
   ];
 
-  ngAfterViewInit(): void {
+
+  ngOnInit(): void {
     register();
-    this.swiper = this.swiperRef?.nativeElement.swiper;
+
   }
 
-  onActiveIndexChange() {
-    console.log(this.swiper?.activeIndex);
-  }
 }
