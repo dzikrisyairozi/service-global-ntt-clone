@@ -22,7 +22,6 @@ SwiperCore.use([]);
           class="hidden sm:flex gap-x-4"
           #swiperContainer
           navigation
-          pagination
         >
           <swiper-slide
             *ngFor="let insight of insights"
