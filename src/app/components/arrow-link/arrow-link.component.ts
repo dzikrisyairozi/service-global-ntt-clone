@@ -17,9 +17,10 @@ import { Component, Input } from '@angular/core';
         <ng-content></ng-content>
       </p>
       <mat-icon
-        class="ml-4 transition duration-500 group-hover:ml-8 animate-ease-in-out"
-        >arrow_forward</mat-icon
+        class="ml-4 font-thin transition duration-500 group-hover:ml-8 animate-ease-in-out"
       >
+        arrow_forward
+      </mat-icon>
     </button>
   `,
   styleUrls: ['./arrow-link.component.css'],
