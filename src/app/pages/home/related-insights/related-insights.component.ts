@@ -20,10 +20,9 @@ SwiperCore.use([]);
           initial-slide="0"
           slides-per-view="3"
           class="hidden sm:flex gap-x-4"
-          inject-styles='[
-            ".swiper-slide { width: 300px; }",]'
           #swiperContainer
           navigation
+          pagination
         >
           <swiper-slide
             *ngFor="let insight of insights"
