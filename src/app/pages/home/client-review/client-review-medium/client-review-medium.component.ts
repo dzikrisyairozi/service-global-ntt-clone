@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import {
-  ClientReviewData,
-  ClientReviewProps,
-} from '../client-review.component';
+import { ClientReviewData } from 'src/app/constant/home/client-review.data';
+import { ClientReviewProps } from 'src/app/types/client-review.types';
 
 @Component({
   selector: 'app-client-review-medium',
