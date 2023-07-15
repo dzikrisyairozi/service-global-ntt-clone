@@ -54,7 +54,6 @@ import { HeroItemsProps } from 'src/app/types/hero-items.types';
       </swiper-slide>
     </swiper-container>
   `,
-  styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent {
   hero_items: HeroItemsProps[] = HeroItems;
