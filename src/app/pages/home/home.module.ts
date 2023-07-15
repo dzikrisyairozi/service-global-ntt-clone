@@ -16,6 +16,7 @@ import { ClientReviewMediumComponent } from './client-review/client-review-mediu
 import { ClientReviewMobileComponent } from './client-review/client-review-mobile/client-review-mobile.component';
 import { ServiceOverviewDesktopComponent } from './service-overview/service-overview-desktop/service-overview-desktop.component';
 import { ServiceOverviewMobileComponent } from './service-overview/service-overview-mobile/service-overview-mobile.component';
+import { HeroComponent } from './hero/hero.component';
 
 register();
 
@@ -33,6 +34,7 @@ register();
     ClientReviewMobileComponent,
     ServiceOverviewDesktopComponent,
     ServiceOverviewMobileComponent,
+    HeroComponent,
   ],
   imports: [
     CommonModule,
