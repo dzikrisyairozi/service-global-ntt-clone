@@ -13,6 +13,7 @@ import { WhyNttComponent } from './pages/home/why-ntt/why-ntt.component';
 import { RelatedInsightsComponent } from './pages/home/related-insights/related-insights.component';
 import {register} from 'swiper/element/bundle';
 import { SwiperDirective } from './directives/swiper.directive';
+import { FeaturedBannerComponent } from './pages/home/featured-banner/featured-banner.component';
 
 register();
 
@@ -24,6 +25,7 @@ register();
     SpeakExpertComponent,
     WhyNttComponent,
     RelatedInsightsComponent,
+    FeaturedBannerComponent,
   ],
   imports: [
     BrowserModule,
