@@ -21,11 +21,10 @@ export interface ClientReviewProps {
   styleUrls: ['./client-review.component.css']
 })
 export class ClientReviewComponent {
-
-
+  
 }
 
-export const ClientReview: ClientReviewProps[] = [
+export const ClientReviewData: ClientReviewProps[] = [
   {
     bgImageUrl: 'https://prodau-cdn.azureedge.net/-/media/ntt/global/about-us/case-studies/tdf/tdf-banner-2023.jpg?rev=38683d9976eb41d28d73142b97fe8bc6&hash=9199F619C13C71EFD787EEC24F052D29',
     upTitle: 'NTT and Tour de France',
