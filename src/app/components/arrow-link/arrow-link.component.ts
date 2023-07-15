@@ -11,9 +11,9 @@ import { Component, Input } from '@angular/core';
           variant === 'primary'
       }"
 
-      class="mt-[40px] rounded-md px-4 py-2 text-xs sm:text-sm md:text-base lg:text-lg flex items-center group"
+      class="rounded-md px-4 py-2 text-xs sm:text-sm md:text-base lg:text-lg flex items-center group"
     >
-      <p>
+      <p class="text-start">
         <ng-content></ng-content>
       </p>
       <mat-icon

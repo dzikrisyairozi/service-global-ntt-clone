@@ -14,6 +14,7 @@ import { RelatedInsightsComponent } from './pages/home/related-insights/related-
 import {register} from 'swiper/element/bundle';
 import { SwiperDirective } from './directives/swiper.directive';
 import { FeaturedBannerComponent } from './pages/home/featured-banner/featured-banner.component';
+import { ServiceOverviewComponent } from './pages/home/service-overview/service-overview.component';
 
 register();
 
@@ -26,6 +27,7 @@ register();
     WhyNttComponent,
     RelatedInsightsComponent,
     FeaturedBannerComponent,
+    ServiceOverviewComponent,
   ],
   imports: [
     BrowserModule,
