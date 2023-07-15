@@ -9,59 +9,7 @@ interface Insight {
 
 @Component({
   selector: 'app-related-insights',
-  template: `
-    <section class="flex flex-col p-[80px]">
-      <p class="text-primary text-[40px]">Related insights and resources</p>
-      <div class="mt-[40px]">
-        <swiper-container
-          initial-slide="0"
-          slides-per-view="3"
-          class="hidden sm:flex gap-x-4"
-        >
-          <swiper-slide
-            *ngFor="let insight of insights"
-            class="bg-[url('{{
-              insight.imageUrl
-            }}')] scale-95 bg-cover mx-2 shadow-lg transition duration-200 hover:scale-105 hover:shadow-2xl"
-          >
-            <div class="flex items-end min-h-[460px]">
-              <div
-                class="flex flex-col w-full backdrop-blur-xl h-[196px] p-[40px]"
-              >
-                <p class="text-white text-[12px] md:text-[16px] lg:text-[20px]">
-                  {{ insight.title }}
-                </p>
-                <p class="text-white mt-4">Read more</p>
-              </div>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-        <swiper-container
-          initial-slide="0"
-          slides-per-view="1"
-          class="sm:hidden flex gap-x-4"
-        >
-          <swiper-slide
-            *ngFor="let insight of insights"
-            class="bg-[url('{{
-              insight.imageUrl
-            }}')] scale-95 bg-cover mx-2 shadow-lg transition duration-200 hover:scale-105 hover:shadow-2xl"
-          >
-            <div class="flex items-end min-h-[460px]">
-              <div
-                class="flex flex-col w-full backdrop-blur-xl h-[196px] p-[40px]"
-              >
-                <p class="text-white text-[12px] md:text-[16px] lg:text-[20px]">
-                  {{ insight.title }}
-                </p>
-                <p class="text-white mt-4">Read more</p>
-              </div>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-      </div>
-    </section>
-  `,
+  templateUrl: './related-insights.component.html',
   styleUrls: ['./related-insights.component.css'],
 })
 export class RelatedInsightsComponent {
